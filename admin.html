@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin - Appointments</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.28/jspdf.plugin.autotable.min.js"></script>
+
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      padding: 10px;
+      border: 1px solid #ccc;
+      text-align: left;
+    }
+    button {
+      padding: 5px 10px;
+      margin: 2px;
+    }
+    .filter {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>All Appointments</h1>
+
+  <div class="filter">
+    <input type="text" id="search" placeholder="Search by name, provider, service..." />
+    <input type="date" id="filterDate" />
+    <button onclick="filterAppointments()">Filter</button>
+    <button onclick="exportToPDF()">Export PDF</button>
+  </div>
+
+  <table id="appointmentsTable">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Full Name</th>
+        <th>Phone Number</th>
+        <th>Visited Before</th>
+        <th>Service</th>
+        <th>Provider</th>
+        <th>Appointment Date</th>
+        <th>Appointment Time</th>
+        <th>Created At</th>
+        <th>Status</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+  <script src="admin.js"></script>
+</body>
+</html>
