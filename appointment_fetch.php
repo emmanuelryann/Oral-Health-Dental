@@ -1,9 +1,9 @@
 <?php
 
-$host = "sql203.infinityfree.com";
-$user = "if0_39435674";
-$pass = "Tochukwu2239";
-$db = "if0_39435674_dental_appointments";
+$host = "sql301.infinityfree.com";
+$user = "if0_42261612";
+$pass = "VouPYRs0FzfpF";
+$db = "if0_42261612_dental_practice";
 
 $conn = new mysqli($host, $user, $pass, $db);
 if ($conn->connect_error) {

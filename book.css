@@ -1,145 +1,208 @@
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 body {
-    margin: 0;
-    font-family: "Raleway", sans-serif;
-    background-color: #f7f9fc;
-    color: #333;
+	margin: 0;
+	font-family: "Raleway", sans-serif;
+	background-color: #f7f9fc;
+	color: #333;
 }
-header{
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #2a6d84;
+header {
+	width: 100%;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #2a6d84;
 }
-header i{
-    position: absolute;
-    left: 60px;
-    color: #fff;
-    font-size: 1.5rem;
-    font-weight: 100;
+header i {
+	position: absolute;
+	left: 60px;
+	color: #fff;
+	font-size: 1.5rem;
+	font-weight: 100;
 }
-header i:hover{
-    cursor: pointer;
+header i:hover {
+	cursor: pointer;
 }
-.details{
-    width: 48.5%;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    color: #fff;
-    padding-bottom: 0;
-    padding: 0;
-    gap: 0;
-    margin-top: 10px;
+.details {
+	width: 48.5%;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	color: #fff;
+	padding-bottom: 0;
+	padding: 0;
+	gap: 0;
+	margin-top: 10px;
 }
-.details h1{
-    margin: 0;
-    padding: 0;
-    font-size: 1.3rem;
-    font-weight: bolder;
+.details h1 {
+	margin: 0;
+	padding: 0;
+	font-size: 1.3rem;
+	font-weight: bolder;
 }
-.details > div{
-    display: flex;
+.details > div {
+	display: flex;
 }
-.number{
-    border-left: 1px solid #fff;
-    margin-left: 20px;
-    padding-left: 20px;
+.number {
+	border-left: 1px solid #fff;
+	margin-left: 20px;
+	padding-left: 20px;
 }
 .booking-container {
-    max-width: 700px;
-    margin: 2rem auto;
-    background: #fff;
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+	max-width: 700px;
+	margin: 2rem auto;
+	background: #fff;
+	padding: 2rem;
+	border-radius: 12px;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
 .booking-header {
-    text-align: center;
-    margin-bottom: 2rem;
+	text-align: center;
+	margin-bottom: 2rem;
 }
 .booking-header h1 {
-    font-size: 2rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
+	font-size: 2rem;
+	font-weight: 600;
+	margin-bottom: 0.5rem;
 }
 .booking-header p {
-    color: #666;
-    font-size: 1rem;
+	color: #666;
+	font-size: 1rem;
 }
 .booking-section {
-    display: grid;
-    gap: 1rem;
+	display: grid;
+	gap: 1rem;
 }
 .form-group {
-    display: flex;
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 .form-group label {
-    margin-bottom: 0.5rem;
-    font-weight: 600;
+	margin-bottom: 0.5rem;
+	font-weight: 600;
 }
 .form-group select,
 .form-group input {
-    padding: 0.75rem;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 1rem;
-    font-family: "Raleway", sans-serif;
+	padding: 0.75rem;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	font-size: 1rem;
+	font-family: "Raleway", sans-serif;
 }
 .submit-btn {
-    margin-top: 2rem;
-    padding: 0.75rem 1.5rem;
-    background: #2a6d84;
-    color: white;
-    font-weight: 600;
-    font-size: 1rem;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-family: "Raleway", sans-serif;
+	margin-top: 2rem;
+	padding: 0.75rem 1.5rem;
+	background: #2a6d84;
+	color: white;
+	font-weight: 600;
+	font-size: 1rem;
+	border: none;
+	border-radius: 6px;
+	cursor: pointer;
+	font-family: "Raleway", sans-serif;
 }
 /* .submit-btn:hover {
     background: #095ea8;
 } */
 .modal {
-  position: fixed;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background-color: rgba(0,0,0,0.5);
-  display: none;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: none;
+	justify-content: center;
+	align-items: center;
+	z-index: 1000;
 }
 
 .modal-content {
-  background: #fff;
-  padding: 1.5rem;
-  border-radius: 10px;
-  text-align: center;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-  max-width: 90%;
+	background: #fff;
+	padding: 1.5rem;
+	border-radius: 10px;
+	text-align: center;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+	max-width: 90%;
 }
 
 #modalCloseBtn,
 #errorCloseBtn {
-  margin-top: 1rem;
-  padding: 10px 20px;
-  background-color: #2a6d84;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+	margin-top: 1rem;
+	padding: 10px 20px;
+	background-color: #2a6d84;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
 }
 
 /* Small modal variation */
 .small-modal .modal-content {
-  max-width: 300px;
-  padding: 1rem;
+	max-width: 300px;
+	padding: 1rem;
+}
+
+@media (max-width: 768px) {
+	header {
+		height: auto;
+		padding: 1rem;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 0.75rem;
+	}
+
+	header i {
+		position: static;
+		left: auto;
+		margin-bottom: 0.25rem;
+	}
+
+	.details {
+		width: 100%;
+		height: auto;
+		margin-top: 0;
+	}
+
+	.details > div {
+		flex-direction: column;
+		gap: 0.3rem;
+	}
+
+	.number {
+		border-left: none;
+		margin-left: 0;
+		padding-left: 0;
+	}
+
+	.booking-container {
+		margin: 1rem;
+		padding: 1.25rem;
+	}
+
+	.booking-header h1 {
+		font-size: 1.6rem;
+	}
+
+	.submit-btn {
+		width: 100%;
+	}
+}
+
+@media (max-width: 480px) {
+	body {
+		font-size: 0.95rem;
+	}
+
+	.booking-container {
+		padding: 1rem;
+	}
+
+	.form-group input,
+	.form-group select {
+		font-size: 0.95rem;
+	}
 }
